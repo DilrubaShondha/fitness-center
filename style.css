@@ -22,7 +22,6 @@ body {
   margin: 0;
   padding: 0;
 }
-/* shared content starts here*/
 .para-content {
   font-size: 1rem;
   color: rgba(255, 255, 255, 0.5);
@@ -101,7 +100,7 @@ body {
   text-align: left;
 }
 .hum-barger{
-display: none;
+  display: none;
 }
 .banner{
   background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0), rgb(17, 17, 17) 100%);
@@ -185,12 +184,10 @@ display: none;
 }
 /* banner section ends here */
 /* habits section starts here */
-
 .habits {
   width: 90%;
   margin: 0 auto;
   margin-top: 100px;
-  /* margin-bottom: 100px; */
 }
 .habit-title {
   font-size: 3rem;
@@ -224,7 +221,7 @@ display: none;
   text-align: center;
   margin-top: 30px;
 }
-/* habits section ends */
+/* habits section ends here*/
 /* milege starts here */
 .extra-mile {
   width: 90%;
@@ -240,6 +237,7 @@ display: none;
   padding-left: 50px;
   padding-top: 40px;
   padding-bottom: 30px;
+  padding-right: 20px;
 }
 .extra-mile-image {
   width: 40%;
@@ -247,10 +245,19 @@ display: none;
   align-items: center;
   justify-content: center;
 }
-.extra-mile-image img {
-  width: 350px;
+.extramile-image{
+  width: 400px;
   height: 310px;
+  overflow: hidden;
   border-radius: 18px;
+
+}
+.extramile-image img {
+  width: 100%;
+  height: 300px;
+  margin: auto;
+  object-fit: cover;
+  transform: scale(2.8) translate(-61px, 13%);
 }
 .extra-mile-title {
   font-size: 3rem;
@@ -493,8 +500,6 @@ footer hr {
 .para-content {
   font-size: .9rem;
   line-height: 24px;
-  /* width: 80%; */
-  /* margin: 0 auto; */
 
 }
 /* navbar starts here */
@@ -576,14 +581,24 @@ footer hr {
   width: 90%;
   height: auto;
   margin-top: 20px;
+  padding-bottom: 30px;
 }
 .extra-mile-text{
-  width: 90%;
+  width: 100%;
 }
 .extra-mile-image{
   width: 100%;
+}
+.extramile-image{
+  width: 90%;
+  height: 270px;
+  margin-bottom: 20px;
   margin: 0 auto;
-  padding-bottom: 20px;
+  border-radius: 18px;
+}
+.extramile-image img {
+  height: 285px;
+  transform: none;
 }
 #join-button{
   width: 90%;
