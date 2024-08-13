@@ -1,18 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:wght@100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+.allura-regular {
+  font-family: "Allura", cursive;
+  font-size:4.7rem;
+  font-weight: 400;
+}
 .inter-font {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   font-variation-settings: "slnt" 0;
-}
-.dancing-script-font {
-  font-family: "Dancing Script", cursive;
-  font-optical-sizing: auto;
-  font-weight:9.7rem;
-  font-weight: 700;
 }
 body {
   background-color: black;
@@ -185,6 +183,15 @@ body {
   height: 40px;
   border-radius: 50%;
   padding: 20px;
+  position: relative;
+}
+.white-btn{
+	border-top: 10px solid transparent;
+	border-left: 20px solid white;
+	border-bottom: 10px solid transparent;
+  position: absolute;
+  top: 10px;
+  left: 12px;
 }
 /* banner section ends here */
 /* habits section starts here */
@@ -440,6 +447,11 @@ footer h5 {
 }
 footer hr {
   border: 1px solid rgba(255, 255, 255, 0.1);
+  width: 90%;
+  margin: 0 auto;
+}
+.footer-content{
+  width: 90%;
 }
 .copyright {
   font-size: 1.1rem;
@@ -452,7 +464,7 @@ footer hr {
 /* footer section ends here */
 
 /* small device responsive starts here*/
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 576px) {
 .btn-primary {
     font-size: 1rem;
     padding: 20px;  }
@@ -490,14 +502,15 @@ footer hr {
 .banner-text {
   width: 100%;
   height: auto;
+  padding-bottom: 50px;
 }
 .banner-title{
   font-size: 3.5rem;
 }
 .banner-image {
-  width: 90%;
-  margin: 0 auto;
+  width: 100%;
   height: auto;
+  background-size: contain;
   background-position: center;
 }
 .first-btn {
@@ -511,8 +524,7 @@ footer hr {
   margin-top: 270px;
   padding-top: 10px;
 }
-
-/* banner ends here */
+/* banner section responsive ends here */
 /*habit section responsive starts*/
 .habits{
   margin-top:0;
@@ -618,7 +630,6 @@ form{
   }
   .footer-content{
     width: 100%;
-
   }
   .copyright{
     font-size: 1.5rem;
