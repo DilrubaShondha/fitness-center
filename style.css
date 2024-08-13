@@ -415,6 +415,7 @@ footer h3 {
   font-size: 2rem;
   font-weight: 700;
   margin-top: 30px;
+  border: 2px solid green;
   margin-bottom: 30px;
 }
 footer h5 {
@@ -446,6 +447,7 @@ footer hr {
   color: rgba(255, 255, 255, 0.5);
   padding-bottom: 35px;
   padding-top: 25px;
+  margin-bottom: 0;
   text-align: center;
 }
 /* footer section ends here */
