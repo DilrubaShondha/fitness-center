@@ -244,11 +244,13 @@ body {
   margin-top: 100px;
 }
 .extra-mile-text {
-  width: 60%;
+  width: 65%;
   padding-left: 50px;
   padding-top: 40px;
   padding-bottom: 30px;
-  padding-right: 20px;
+}
+.extra-mile-text .para-content{
+  width: 80%;
 }
 .extra-mile-image {
   width: 40%;
@@ -406,7 +408,47 @@ input, select {
   padding-left: 10px;
   padding-top: 5px;
 }
-
+/* team section ends here */
+/* discount section starts here */
+.discount {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+.discount-image{
+  height: 460px;
+  position: relative;
+  margin-top: 30px;
+}
+.discount-image img{
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+}
+.discount-text{
+  background: rgba(151, 147, 147, 0.54);
+  width: 60%;
+  color: white;
+  height: 50%;
+  margin: 0 auto;
+  position: absolute;
+  top: 25%;
+  left: 20%;
+  padding-top: 2rem;
+  border-radius: 2rem;
+}
+.discount-title{
+  font-size: 2.5rem;
+  color: white;
+}
+.discount .para-content{
+  color: white;
+  margin-bottom: 1.8rem;
+}
+.discount .btn-primary{
+  margin-left: 40%;
+}
+/* discount section ends here */
 /* footer section starts here */
 footer {
   background-color: rgba(255, 255, 255, 0.1);
@@ -482,7 +524,6 @@ footer hr {
   line-height: 24px;
 }
 /* navbar starts here */
-
 .nav-links {
   display: none;
 }
@@ -553,7 +594,6 @@ footer hr {
   font-size: 2rem;
 } 
 /*habit section responsive ends*/
- 
 /*milege section responsive starts*/
 .extra-mile{
   flex-direction: column;
@@ -615,9 +655,28 @@ form{
   .team-container{
     grid-template-columns: repeat(1, 1fr);
   }
-  
 /*team section responsive done*/
-
+/* discount section responsive starts */
+.discount-text{
+  width: 90%;
+  height: 60%;
+  top: 20%;
+  left: 5%;
+  padding-top: 2rem;
+  border-radius: 2rem;
+}
+.discount-title{
+  font-size: 2rem;
+}
+.discount .para-content{
+  margin-bottom: 1.8rem;
+}
+.discount .btn-primary{
+  margin-left: 32%;
+  padding: 15px;
+  border-radius: 1rem;
+}
+/* discount section ends */
 /*footer section responsive starts*/
   footer{
     width: 100%;
@@ -635,6 +694,5 @@ form{
     font-size: 1.5rem;
   }
 /*footer section responsive done*/
-
 }
 
