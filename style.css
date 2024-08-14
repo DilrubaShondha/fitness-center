@@ -340,10 +340,12 @@ input, select {
   gap: 10px;
 }
 #height, #weight, #age, #sex{
-  width: 50%;
+  width: 50%;  
+  border-right: 10px solid transparent;
 }
 #activity{
   width: 100%;
+  border-right: 10px solid transparent;
 }
 .button-calculate .btn-primary{
   border-radius: 2rem;
@@ -427,14 +429,15 @@ input, select {
 }
 .discount-text{
   background: rgba(151, 147, 147, 0.54);
-  width: 60%;
+  width: 50%;
   color: white;
   height: 50%;
   margin: 0 auto;
   position: absolute;
   top: 25%;
-  left: 20%;
+  left: 25%;
   padding-top: 2rem;
+  padding-bottom: 2rem;
   border-radius: 2rem;
 }
 .discount-title{
