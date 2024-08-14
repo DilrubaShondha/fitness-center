@@ -1,16 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
-.allura-regular {
-  font-family: "Allura", cursive;
-  font-size:4.7rem;
-  font-weight: 400;
-}
+@import url('https://fonts.cdnfonts.com/css/miama');
 .inter-font {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: 300;
   font-style: normal;
   font-variation-settings: "slnt" 0;
+}
+@font-face {
+  font-family: 'Miama';
+  font-style: italic;
+  src: local('Miama'), url('https://fonts.cdnfonts.com/s/302/Miama-Regular.woff') format('woff'), url('https://fonts.cdnfonts.com/s/302/Miama.woff') format('woff');
 }
 body {
   background-color: black;
@@ -33,7 +33,6 @@ body {
 .btn-primary {
   font-size: 1.1rem;
   font-weight: 600;
-  padding: 40px;
   color: white;
   border-radius: 42px;
   padding: 16px 40px 16px 40px;
@@ -51,7 +50,6 @@ body {
   border: 1px solid white;
 }
 /* shared content ends here*/
-
 /* navbar starts here*/
 .navbar{
   background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0), rgb(17, 17, 17) 100%);
@@ -132,9 +130,15 @@ body {
   color: white;
   font-weight: 900;
 }
+span{
+  font-family: 'Miama', sans-serif;
+  font-size: 9rem;
+  font-weight: 300;
+  line-height: .4;
+}
 .button-container{
   display: flex;
-  justify-content: space-around;
+  gap: 2rem;
 }
 .first-btn {
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -263,7 +267,6 @@ body {
   height: 310px;
   overflow: hidden;
   border-radius: 18px;
-
 }
 .extramile-image img {
   width: 100%;
@@ -311,6 +314,9 @@ body {
   margin-top: 30px;
   margin-bottom: 30px;
 }
+.bmi-calculator .para-content{
+  width: 80%;
+}
 table {
   width: 300px;
   border-collapse: collapse;
@@ -319,8 +325,12 @@ table, th, td {
   border: 1px solid #444;
 }
 th, td {
+  color: rgba(255, 255, 255, 0.5);
   padding: 10px;
   text-align: left;
+}
+th{
+  color: white;
 }
 form {
   width: 450px;
@@ -350,7 +360,8 @@ input, select {
 .button-calculate .btn-primary{
   border-radius: 2rem;
   padding: 15px 60px 15px 60px;
-  margin-top: .8rem;}
+  margin-top: .8rem;
+}
 /* team section starts */
 .team-section {
   padding: 50px 0;
@@ -473,6 +484,7 @@ footer h5 {
   font-size: 1.4rem;
   color: rgba(255, 255, 255, 0.5);
   margin-bottom: 20px;
+  font-weight: 300;
 }
 .footer-container {
   display: flex;
@@ -504,10 +516,10 @@ footer hr {
   padding-bottom: 35px;
   padding-top: 25px;
   margin-bottom: 0;
+  font-weight: 300;
   text-align: center;
 }
 /* footer section ends here */
-
 /* small device responsive starts here*/
 @media only screen and (max-width: 576px) {
 .btn-primary {
@@ -551,6 +563,10 @@ footer hr {
 .banner-title{
   font-size: 3.5rem;
 }
+span{
+  font-size:7rem ;
+  line-height:0.7 ;
+}
 .banner-image {
   width: 100%;
   height: auto;
@@ -583,7 +599,6 @@ footer hr {
 }
 .habit-card img {
   width: 230px;
-  /* width: 100%; */
   height: 230px;
   margin: 0 auto;
   margin-top: 20px;
@@ -626,7 +641,6 @@ footer hr {
   width: 90%;
 }
 /*milege section responsive ends*/
-
 /*calculator section responsive starts*/
 .calculator{
   width: 100%;
@@ -652,8 +666,10 @@ form{
 .calculator-text .para-content{
   width: 60%;
 }
+.bmi-calculator .para-content{
+  width: 100%;
+}
 /*calculator section responsive done*/
-
 /*team section responsive starts*/
   .team-container{
     grid-template-columns: repeat(1, 1fr);
@@ -694,8 +710,16 @@ form{
     width: 100%;
   }
   .copyright{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
   }
+  .footer-container {
+    padding-bottom: 20px;
+  }
+
 /*footer section responsive done*/
 }
 
